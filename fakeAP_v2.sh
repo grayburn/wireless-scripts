@@ -59,7 +59,7 @@ echo "dhcp-range=10.0.0.2,10.0.0.100,255.255.255.0,8765h" >> /etc/dnsmasq.conf
 echo "dhcp-option=3,10.0.0.1" >> /etc/dnsmasq.conf
 echo "dhcp-option=6,8.8.8.8" >> /etc/dnsmasq.conf
 echo "dhcp-leasefile=/etc/dhcpd.leases" >> /etc/dnsmasq.conf
-
+echo "interface=at0" >> /etc/dnsmasq.conf
 
 echo "Starting the DHCP Server..."
 dnsmasq --conf-file=/etc/dnsmasq.conf
